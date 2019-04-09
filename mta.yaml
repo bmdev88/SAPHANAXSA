@@ -1,0 +1,30 @@
+ID: SAPHANAXSA
+_schema-version: '2.0'
+version: 0.0.1
+
+modules:
+ - name: DB
+   type: hdb
+   path: DB
+   requires:
+    - name: hdi_DB_2
+
+ 
+
+resources:
+ - name: hdi_DB
+   parameters:
+      config:
+         schema: DB01
+   properties:
+      hdi-container-name: ${service-name}
+   type: com.sap.xs.hdi-container
+
+ - name: hdi_DB_2
+   parameters:
+      config:
+         schema: DB01
+   properties:
+      hdi-container-name_2: ${service-name}
+   type: com.sap.xs.hdi-container
+

@@ -1,0 +1,12 @@
+{
+  "role": {
+    "name": "SAPHANAXSA.DB::external_access",
+    "object_privileges": [
+      {
+        "name": "SAPHANAXSA.DB::tables.Customers",
+        "type": "TABLE",
+        "privileges": [ "SELECT" ]
+      }
+    ]
+  }
+}
